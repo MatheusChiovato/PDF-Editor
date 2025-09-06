@@ -1,0 +1,16 @@
+#home-page{
+  position: relative;
+  z-index: 1;
+}
+
+#home-page::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../../../../public/images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  height: 100vh;
+}
