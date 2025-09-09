@@ -1,0 +1,28 @@
+.botao-categoria{
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 145px;
+  background-color: white;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: .20s;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.botao-categoria:hover{
+  background-color: #c8c7db;
+}
+
+
+.botao-categoria.ativo{
+  background-color: #49479D;
+  color: white;
+  border: 0.5px solid rgb(153, 153, 153);
+}
+.botao-categoria.ativo:hover{
+  background-color: #2e2d69;
+  color: white;
+  border: 0.5px solid rgb(255, 255, 255);
+}
