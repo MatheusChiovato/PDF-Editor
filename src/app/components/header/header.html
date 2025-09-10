@@ -1,33 +1,35 @@
-<div id="header" [class.expandido]="ativoIndex !== null">
-    <div id="top-header">
-      <img src="images/sicoob.jpeg" alt="logo">
-    <div id="nome-app">
-      <h1>Chivas PDF</h1>
-    </div>
-    <div id="user-tag">
-      <img src="images/profile.jpeg" alt="user-icon">
-      <h1>Username</h1>
-    </div>
-    </div>
-    <div id="divisor"></div>
-    <div class="botoes-categoria">
-      <app-botao-categoria (mudouEstado)="selecionar(0)" [ativo]="ativoIndex===0">Arquivo</app-botao-categoria>
-      <app-botao-categoria (mudouEstado)="selecionar(1)" [ativo]="ativoIndex===1">Converter</app-botao-categoria>
-      <app-botao-categoria (mudouEstado)="selecionar(2)" [ativo]="ativoIndex===2">Página</app-botao-categoria>
-    </div>
-    <div *ngIf="ativoIndex === 0" class="sub-menu">
-        <app-botao-sub-categoria>Abrir</app-botao-sub-categoria>
-        <app-botao-sub-categoria>Salvar como</app-botao-sub-categoria>
-        <app-botao-sub-categoria>Imprimir</app-botao-sub-categoria>
-        <app-botao-sub-categoria>Fechar</app-botao-sub-categoria>
-    </div>
-    <div *ngIf="ativoIndex === 1" class="sub-menu">
-      <app-botao-sub-categoria>PDF → Word</app-botao-sub-categoria>
-      <app-botao-sub-categoria>PDF → Excel</app-botao-sub-categoria>
-      <app-botao-sub-categoria>PDF → PowerPoint</app-botao-sub-categoria>
-    </div>
-    <div *ngIf="ativoIndex === 2" class="sub-menu">
-      <app-botao-sub-categoria>Adicionar página</app-botao-sub-categoria>
-      <app-botao-sub-categoria>Excluir página</app-botao-sub-categoria>
-    </div>
+<div id="header-size">
+  <div id="header" [class.expandido]="ativoIndex !== null">
+      <div id="top-header">
+        <img src="images/sicoob.jpeg" alt="logo">
+      <div id="nome-app">
+        <h1>Chivas PDF</h1>
+      </div>
+      <div id="user-tag">
+        <img src="images/profile.jpeg" alt="user-icon">
+        <h1>Username</h1>
+      </div>
+      </div>
+      <div id="divisor"></div>
+      <div class="botoes-categoria">
+        <app-botao-categoria (mudouEstado)="selecionar(0)" [ativo]="ativoIndex===0">Arquivo</app-botao-categoria>
+        <app-botao-categoria (mudouEstado)="selecionar(1)" [ativo]="ativoIndex===1">Converter</app-botao-categoria>
+        <app-botao-categoria (mudouEstado)="selecionar(2)" [ativo]="ativoIndex===2">Página</app-botao-categoria>
+      </div>
+      <div *ngIf="ativoIndex === 0" class="sub-menu">
+          <app-botao-sub-categoria>Abrir</app-botao-sub-categoria>
+          <app-botao-sub-categoria>Salvar como</app-botao-sub-categoria>
+          <app-botao-sub-categoria>Imprimir</app-botao-sub-categoria>
+          <app-botao-sub-categoria>Fechar</app-botao-sub-categoria>
+      </div>
+      <div *ngIf="ativoIndex === 1" class="sub-menu">
+        <app-botao-sub-categoria>PDF → Word</app-botao-sub-categoria>
+        <app-botao-sub-categoria>PDF → Excel</app-botao-sub-categoria>
+        <app-botao-sub-categoria>PDF → PowerPoint</app-botao-sub-categoria>
+      </div>
+      <div *ngIf="ativoIndex === 2" class="sub-menu">
+        <app-botao-sub-categoria>Adicionar página</app-botao-sub-categoria>
+        <app-botao-sub-categoria>Excluir página</app-botao-sub-categoria>
+      </div>
+  </div>
 </div>

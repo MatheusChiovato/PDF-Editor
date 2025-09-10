@@ -1,9 +1,13 @@
+#header-size{
+  height: 195px;
+}
 #header{
   width: 100%;
   height: 145px;
   background-color: #003641;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: -2px 4px 8px #283b3f;
 }
 #header.expandido{
   height: 180px;
